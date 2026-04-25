@@ -1,10 +1,10 @@
 # Practice
 git init
-git branch -m main
+git branch -m main 
 uv init
 uv venv
-activate the venv
-uv add dvc dvc_s3
+activate the venv (source .venv/bin/activate)
+uv add dvc dvc_s3 (main to run but )
 # different options to install dvc dependencies
 uv pip install dvc/ sudo snap install dvc --classic/ sudo apt update
 sudo apt install dvc
