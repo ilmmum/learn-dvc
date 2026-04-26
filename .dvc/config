@@ -1,0 +1,4 @@
+[core]
+    remote = winedata
+['remote "winedata"']
+    url = s3://my-dvc-project-bucket
