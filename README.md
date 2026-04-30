@@ -1,4 +1,16 @@
 # Practice
+sudo apt install unzip 
+Install aws cli on your machine
+create access keys
+aws configure
+# just incase it does it install normal with sudo apt update and sudo apt install awscli use below commands
+cd /tmp
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
+unzip awscliv2.zip
+
+sudo ./aws/install
 git init
 git branch -m main 
 uv init
@@ -19,8 +31,9 @@ cat data/wine_data.csv.dvc
 # compare before and after the md5 value will change
 
 # Create an s3 bucket let the same is demo-bucket
-dvc remote add -d winedata s3://demo-bucket
-
+dvc remote add -d winedata s3://my-dvc-project-bucket
+# To check dvc list on s3 bucket 
+dvc remote list
 aws configure
 # get the keys and configure it
 dvc push
